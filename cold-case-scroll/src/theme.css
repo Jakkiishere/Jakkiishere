@@ -1,0 +1,548 @@
+/* ============================================================
+   Cold Case Scroll — Brand Design System (Theme)
+   Dark, moody, true-crime documentary meets modern minimalist mobile app.
+   Use: Import or copy into your project's root CSS.
+   ============================================================ */
+
+:root {
+  /* -------- Color Palette -------- */
+  
+  /* Backgrounds — deep black-blues */
+  --bg-primary:      #0a0a0f;
+  --bg-secondary:    #12121a;
+  --bg-elevated:     #1a1a26;
+  --bg-tertiary:     #22222f;
+
+  /* Accent — Crime Scene Red */
+  --accent-primary:     #c41e3a;
+  --accent-primary-hov: #d92b48;
+  --accent-primary-dim: #8b0000;
+
+  /* Accent — Detective Blue */
+  --accent-blue:      #1e3a5f;
+  --accent-blue-hov:  #2a4f7a;
+  --accent-blue-dim:  #0f1f33;
+
+  /* Accent — Evidence Gold */
+  --accent-gold:      #c9a94e;
+  --accent-gold-hov:  #dbbf66;
+  --accent-gold-dim:  #8a7535;
+
+  /* Text */
+  --text-primary:     #e8e6e3;   /* off-white for body */
+  --text-secondary:   #b8b6b0;   /* muted */
+  --text-tertiary:    #7a7a7a;   /* placeholder / disabled */
+  --text-on-accent:   #ffffff;
+
+  /* Borders & Dividers */
+  --border-primary:   #2a2a35;
+  --border-subtle:    #1e1e28;
+  --divider:          #1e1e28;
+
+  /* Semantic */
+  --color-correct:    #2d6a4f;   /* right guess / confirmed */
+  --color-wrong:      #c41e3a;   /* wrong guess / accusation failed */
+  --color-warning:    #d4a017;   /* hint / caution */
+  --color-info:       #3a7ca5;   /* clue reveal */
+
+  /* Shadows */
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.6);
+  --shadow-md:  0 4px 12px rgba(0,0,0,0.5);
+  --shadow-lg:  0 8px 24px rgba(0,0,0,0.6);
+  --shadow-red: 0 0 12px rgba(196,30,58,0.3);
+
+  /* -------- Typography -------- */
+  --font-display:   'Georgia', 'Palatino Linotype', 'Book Antiqua', serif;
+  --font-body:      -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono:      'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+
+  /* Font Sizes — 13px base */
+  --text-xs:   0.688rem;   /* 11px */
+  --text-sm:   0.813rem;   /* 13px — base */
+  --text-base: 1rem;       /* 16px */
+  --text-lg:   1.25rem;    /* 20px */
+  --text-xl:   1.5rem;     /* 24px */
+  --text-2xl:  1.875rem;   /* 30px */
+  --text-3xl:  2.25rem;    /* 36px */
+
+  /* Leading */
+  --leading-tight:   1.2;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.75;
+
+  /* Letter Spacing */
+  --tracking-tight:  -0.01em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.05em;
+  --tracking-wider:   0.1em;
+
+  /* Font Weight */
+  --weight-normal:  400;
+  --weight-medium:  500;
+  --weight-semibold: 600;
+  --weight-bold:    700;
+
+  /* -------- Spacing (8px grid) -------- */
+  --space-1: 0.25rem;   /* 4px  */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+
+  /* -------- Border Radius -------- */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-full: 9999px;
+
+  /* -------- Transitions -------- */
+  --transition-fast:   150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow:   400ms ease;
+
+  /* -------- Z-Index -------- */
+  --z-base:      0;
+  --z-dropdown:  100;
+  --z-sticky:    200;
+  --z-overlay:   300;
+  --z-modal:     400;
+  --z-toast:     500;
+
+  /* -------- Mobile-First Breakpoints (reference) --------
+     @media (min-width: 640px)  { /* sm  }
+     @media (min-width: 768px)  { /* md  }
+     @media (min-width: 1024px) { /* lg  }
+     @media (min-width: 1280px) { /* xl  }
+  */
+}
+
+/* ============================================================
+   Base / Reset
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 100%; /* 16px — user's default */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* -------- Typography Helpers -------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  color: var(--text-primary);
+  margin-top: 0;
+}
+
+h1 {
+  font-size: var(--text-3xl);
+  letter-spacing: var(--tracking-tight);
+}
+
+h2 {
+  font-size: var(--text-2xl);
+}
+
+h3 {
+  font-size: var(--text-xl);
+}
+
+h4 {
+  font-size: var(--text-lg);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--accent-primary-hov);
+}
+
+small, .text-sm {
+  font-size: var(--text-sm);
+}
+
+.text-xs {
+  font-size: var(--text-xs);
+}
+
+.text-muted {
+  color: var(--text-secondary);
+}
+
+.text-tertiary {
+  color: var(--text-tertiary);
+}
+
+.text-serif {
+  font-family: var(--font-display);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ============================================================
+   UI Components
+   ============================================================ */
+
+/* -------- Card -------- */
+.card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-normal), border-color var(--transition-normal);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-primary-dim);
+}
+
+.card--elevated {
+  background: var(--bg-elevated);
+}
+
+.card--accent {
+  border-color: var(--accent-primary-dim);
+  box-shadow: var(--shadow-red);
+}
+
+/* -------- Buttons -------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn--primary {
+  background: var(--accent-primary);
+  color: var(--text-on-accent);
+  border-color: var(--accent-primary);
+}
+
+.btn--primary:hover:not(:disabled) {
+  background: var(--accent-primary-hov);
+  border-color: var(--accent-primary-hov);
+}
+
+.btn--secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border-color: var(--border-primary);
+}
+
+.btn--secondary:hover:not(:disabled) {
+  background: var(--bg-elevated);
+  border-color: var(--text-tertiary);
+}
+
+.btn--gold {
+  background: var(--accent-gold);
+  color: #000;
+  border-color: var(--accent-gold);
+}
+
+.btn--gold:hover:not(:disabled) {
+  background: var(--accent-gold-hov);
+  border-color: var(--accent-gold-hov);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--text-secondary);
+  border: none;
+}
+
+.btn--ghost:hover:not(:disabled) {
+  color: var(--text-primary);
+  background: var(--bg-elevated);
+}
+
+.btn--sm {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-xs);
+}
+
+.btn--lg {
+  padding: var(--space-4) var(--space-8);
+  font-size: var(--text-base);
+}
+
+/* -------- Inputs & Forms -------- */
+.input {
+  display: block;
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.3);
+}
+
+.input::placeholder {
+  color: var(--text-tertiary);
+}
+
+.label {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+/* -------- Badge / Tag -------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+.badge--red {
+  background: rgba(196, 30, 58, 0.15);
+  color: var(--accent-primary);
+  border: 1px solid rgba(196, 30, 58, 0.3);
+}
+
+.badge--gold {
+  background: rgba(201, 169, 78, 0.15);
+  color: var(--accent-gold);
+  border: 1px solid rgba(201, 169, 78, 0.3);
+}
+
+.badge--blue {
+  background: rgba(30, 58, 95, 0.25);
+  color: #6a9ecf;
+  border: 1px solid rgba(30, 58, 95, 0.4);
+}
+
+/* -------- Scrollbar (Dark) -------- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-primary);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
+
+/* ============================================================
+   Utility Classes
+   ============================================================ */
+
+.flex      { display: flex; }
+.flex-col  { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-1 { gap: var(--space-1); }
+.gap-2 { gap: var(--space-2); }
+.gap-4 { gap: var(--space-4); }
+.gap-6 { gap: var(--space-6); }
+
+.w-full   { width: 100%; }
+.h-full   { height: 100%; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.inset-0  { top: 0; right: 0; bottom: 0; left: 0; }
+
+.overflow-hidden { overflow: hidden; }
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(196, 30, 58, 0.3);
+  color: var(--text-primary);
+}
+
+/* ============================================================
+   Scroll Narrative — Cold Case Specific
+   ============================================================ */
+
+/* The main scrolling case narrative */
+.scroll-narrative {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4);
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--text-primary);
+}
+
+/* Evidence reveal block */
+.evidence-block {
+  background: var(--bg-elevated);
+  border-left: 3px solid var(--accent-gold);
+  padding: var(--space-4) var(--space-6);
+  margin: var(--space-6) 0;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+/* Suspect profile card */
+.suspect-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin: var(--space-6) 0;
+}
+
+.suspect-card__image {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+}
+
+.suspect-card__body {
+  padding: var(--space-4) var(--space-6);
+}
+
+.suspect-card__name {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-bold);
+  margin-bottom: var(--space-2);
+}
+
+.suspect-card__role {
+  color: var(--accent-primary);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  margin-bottom: var(--space-3);
+}
+
+/* Clue snippet */
+.clue-snippet {
+  background: rgba(201, 169, 78, 0.08);
+  border: 1px dashed rgba(201, 169, 78, 0.3);
+  padding: var(--space-4) var(--space-6);
+  border-radius: var(--radius-md);
+  margin: var(--space-4) 0;
+  font-style: italic;
+  color: var(--accent-gold);
+}
+
+/* Crime scene divider — for scroll transitions */
+.crime-scene-divider {
+  text-align: center;
+  padding: var(--space-8) 0;
+  color: var(--accent-primary-dim);
+  font-size: var(--text-lg);
+  letter-spacing: var(--tracking-wider);
+  opacity: 0.6;
+}
+
+/* Loading / splash overlay */
+.splash-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--z-modal);
+}
+
+.splash-overlay__title {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  color: var(--text-primary);
+  letter-spacing: var(--tracking-wide);
+  margin-top: var(--space-6);
+}
+
+.splash-overlay__subtitle {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  margin-top: var(--space-2);
+}
