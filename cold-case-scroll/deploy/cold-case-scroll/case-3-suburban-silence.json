@@ -1,0 +1,101 @@
+{
+  "id": "case-3",
+  "title": "The Suburban Silence",
+  "description": "A quiet cul-de-sac, a missing neighbor, and a backyard freshly dug up like a grave. On Cedar Lane, everyone knows everything. Except the one thing that matters.",
+  "scenes": [
+    {
+      "id": "scene-1",
+      "type": "narrative",
+      "text": "Cedar Lane is the kind of street that still smells like fresh-cut grass on summer evenings. Six houses. A perfect cul-de-sac. Kids sell lemonade. Neighbors wave from driveways. Everyone knows everyone.\n\nSo when Diane Porter didn't show up for book club on Tuesday — and then missed her Wednesday morning yoga — her next-door neighbor, Evelyn Kowalski, called the police.\n\nThe front door was unlocked. Diane's car was in the garage. Her phone was on the kitchen counter, screen dark. Her coffee sat half-drunk, a thin skin of milk forming on the surface.\n\nAnd in the backyard, behind the rose bushes where the soil is dark and rich, there's a patch of earth that's been freshly turned. About six feet long. Three feet wide.\n\nThe detective looks at the soil, then at you. 'Tell me that's not a grave.'\n\nYou can't."
+    },
+    {
+      "id": "scene-2",
+      "type": "clue",
+      "text": "The freshly disturbed soil measures exactly 5 feet 8 inches by 2 feet 10 inches. Three feet deep.\n\nThe hole is empty.\n\nBut forensics finds traces in the soil:\n- Decomposing organic matter — not human, garden compost\n- Synthetic fibers — cheap polyester, dark blue, like a work uniform\n- A single gold hoop earring with what appears to be dried blood on the clasp\n\nThe blood type is A-positive. Diane Porter's medical records list her as O-positive.\n\nThe earring belongs to someone else.",
+      "clue_name": "Soil Forensics",
+      "clue_detail": "Hole is 5'8\" x 2'10\" x 3' deep. Empty. Contents: compost fibers, dark blue polyester fibers (uniform-grade), and a gold hoop earring with dried blood (Type A-positive — not Diane's, she's O-positive)."
+    },
+    {
+      "id": "scene-3",
+      "type": "narrative",
+      "text": "Tom Porter is sitting at the kitchen table when you arrive. Late 40s, a real estate agent who looks like he hasn't slept in days. His hands are wrapped around a cold mug of coffee like it's the only thing keeping him upright.\n\n'She's been acting strange for months,' he says quietly. 'Staying out late. Forgetting things. I thought maybe... midlife crisis.'\n\nHe looks at the half-drunk coffee. 'She always finishes her coffee. Always.'\n\nYou ask about the hole. His face goes pale. 'I was going to plant a tree. A magnolia. She always wanted one. I started digging last weekend but I didn't finish.'\n\nHis hands are shaking as he speaks. They're callused — gardener's hands. Or a digger's hands.\n\n'I loved her,' he says. 'Whatever you're thinking — I loved her.'"
+    },
+    {
+      "id": "scene-4",
+      "type": "clue",
+      "text": "Diane kept a diary in a locked drawer of her home office. The lock was broken open. The last entry is dated Monday, June 12:\n\n'I found the photos. I can't believe it. All these years, and he's been hiding so much. Not an affair. Worse. So much worse.\n\nI don't know what to do. If I confront him, he'll know. If I go to the police, I need more proof.\n\nI'm meeting K tomorrow. She promised she'd help. She said she has evidence too.\n\nGod help me.'",
+      "clue_name": "Diane's Diary",
+      "clue_detail": "Last entry (June 12): Diane discovered 'photos' proving Tom was hiding something 'worse than an affair.' She planned to meet 'K' for help, saying K 'has evidence too.' Drawer lock was broken open."
+    },
+    {
+      "id": "scene-5",
+      "type": "clue",
+      "text": "Inside Tom's locked toolbox in the garage:\n\n- A burner phone with no SIM card. Recovered messages show one contact: 'K.' Messages are deleted, but metadata shows calls were made daily for the past two weeks.\n- Several printed photos of a construction site. A building under construction. Date stamp: 2019.\n- A newspaper clipping: 'Two Workers Killed in Downtown Building Collapse — Contractor Faces Wrongful Death Suit'\n\nThe contractor named: Porter Construction & Development. Tom Porter's family business. Tom ran the company before becoming a real estate agent. The company lost the lawsuit. Tom's father died of a heart attack six months later. The business dissolved.\n\nAccording to the article, investigators found evidence of substandard materials — cost-cutting that led to the collapse. Someone signed off on those materials. The name on the sign-off sheet: Tom Porter.",
+      "clue_name": "The Locked Toolbox",
+      "clue_detail": "In Tom's garage toolbox: (1) Burner phone with calls to 'K.' (2) Photos of 2019 construction site. (3) News clipping: Two workers killed in building collapse. Porter Construction used substandard materials. Tom Porter signed off."
+    },
+    {
+      "id": "scene-6",
+      "type": "narrative",
+      "text": "The picture sharpens. Tom Porter wasn't just a real estate agent with marital problems. He had a past — a deadly one. Two men died because of his cost-cutting. Diane found the photos. She figured it out.\n\nAnd she was meeting 'K.'\n\nYou search Diane's phone records. In the days before her disappearance, she exchanged texts with an unknown number. The last one, sent Tuesday at 3:17 PM:\n\nDiane: 'I have the photos. Meet me at the house at 4. We can figure out our next move together.'\nUnknown: 'I'll be there. Don't tell Tom.'\nDiane: 'I won't. See you soon.'\n\nAt 3:45 PM, Mrs. Kowalski's Ring camera captures a white sedan pulling into the Porter driveway. Female driver. The license plate is readable.\n\nRegistered to Karen Mills.\n\nKaren Mills is the daughter of one of the workers killed in the 2019 collapse. She was 24 when her father died. She lost everything.\n\nAnd she's been working at the same real estate agency as Tom for the past eight months."
+    },
+    {
+      "id": "scene-7",
+      "type": "suspect_intro",
+      "text": "Three people, three secrets. A husband who buried the truth — and maybe his wife. A daughter who lost her father to Tom's greed. And a neighbor who sees everything from behind her curtains.",
+      "suspects": ["suspect-tom", "suspect-karen", "suspect-kowalski"]
+    },
+    {
+      "id": "scene-8",
+      "type": "narrative",
+      "text": "You bring Tom in. He's sweating through his polo shirt.\n\n'Those photos are from years ago,' he says. 'It was an accident. The lawyers handled it. I was cleared.'\n\n'But Diane didn't think so, did she?'\n\nTom is silent for a long time. When he speaks, his voice cracks. 'I was going to tell her. I just needed time. She was going to leave me. Take the kids. I couldn't lose them.'\n\n'Where is your wife, Tom?'\n\n'I don't know.' His eyes are wet. 'I don't know where she is. I've been looking everywhere.'\n\n'And the hole in the backyard?'\n\nHe stares at the table. 'It wasn't for a tree.'\n\n'What was it for?'\n\nNo answer."
+    },
+    {
+      "id": "scene-9",
+      "type": "narrative",
+      "text": "Karen Mills is located at a motel on the outskirts of town. She doesn't resist when the police arrive. She doesn't say a word.\n\nIn her room, they find Diane Porter — bound with zip ties, dehydrated but alive — in the motel's storage closet.\n\nDiane is taken to the hospital. She's shaken, exhausted, but coherent.\n\n'I was going to expose him,' she tells you from her hospital bed. 'Tom. What he did to those families. Karen reached out to me. She said she had proof. We were going to go to the police together.'\n\nHer eyes fill with tears. 'But I got scared. I told her I couldn't do it. That I still loved Tom. That I'd find another way.'\n\n'And then?'\n\n'She grabbed me. Told me I'd be safe until Tom was arrested. She said it was for my own good. She put me in her car. Drove me to that motel.'\n\nYou look at Karen in the interrogation room. She's not crying. She's not angry. She's hollow.\n\n'I wasn't going to hurt her,' she says flatly. 'I just needed her safe until Tom paid for what he did. He killed my father. He destroyed my family. And he was going to get away with it.'\n\n'And the earring in the hole?'\n\nShe touches her ear. 'I was watching the house. I lost it in the backyard a few nights before. I didn't even realize until hours later.'\n\n'Why was there a grave-sized hole in Tom's backyard?'\n\nKaren's eyes go cold. 'You should ask Tom that.'"
+    },
+    {
+      "id": "scene-10",
+      "type": "clue",
+      "text": "Confronted with the full picture, Tom breaks. He buries his face in his hands.\n\n'I dug the hole for her,' he says. 'For Karen. I found out Diane was meeting someone. I followed her. I saw Karen's car. I thought she was the one Diane was having an affair with — I didn't know about the construction stuff then, not really.'\n\n'I was going to... I was going to bury her. Karen. I thought if I got rid of her, Diane would come back to me. I dug the hole that morning. I was going to do it that night.'\n\n'But Diane confronted you first. She showed you the photos.'\n\nTom nods, sobbing. 'She showed me everything. What I did. The families I destroyed. I looked at her and I saw... a monster. And the monster was me.'\n\n'So what did you do?'\n\n'I called Karen. I told her everything. I told her to take Diane — to keep her safe. I said I'd turn myself in. But I couldn't. I couldn't face what I'd done.'\n\nHe looks up. 'The hole is still there. I never filled it. I wanted someone to find it. To know what I was about to become.'",
+      "clue_name": "Tom's Confession",
+      "clue_detail": "Tom admits he dug the hole for Karen, whom he mistook for Diane's lover. He planned to kill her. But Diane confronted him with the photos first, and he broke down. He called Karen and told her to take Diane to safety. He never filled the hole — 'I wanted someone to find it. To know what I was about to become.'"
+    },
+    {
+      "id": "scene-11",
+      "type": "solve",
+      "text": "Diane is safe. Tom is in custody for the construction cover-up and conspiracy to commit murder. Karen is charged with unlawful imprisonment.\n\nBut one question remains: who was responsible for the events that unfolded on Cedar Lane? Who set this tragedy in motion?\n\nThree people. Three versions of the truth.",
+      "suspects": [
+        {
+          "id": "suspect-tom",
+          "name": "Tom Porter",
+          "motive": "He had everything to lose. Diane discovered his role in two deaths. She was going to expose him. He planned to kill Karen — and dug a grave to prove it.",
+          "alibi": "Showing a house to clients in the next town from 4-7 PM on Tuesday. He has signed witness statements. But the house is 15 minutes from home.",
+          "suspicious_detail": "He dug a grave-sized hole in his backyard. He had a burner phone. He planned a murder. But in the end, he confessed to everything and told Karen to protect Diane — not hurt her."
+        },
+        {
+          "id": "suspect-karen",
+          "name": "Karen Mills",
+          "motive": "Her father was killed because of Tom's negligence. She spent years watching the man who destroyed her family live a perfect suburban life. She wanted justice — or revenge.",
+          "alibi": "At work until 3 PM. Diane's text confirms she arrived at the house at 4 PM. But no one saw her leave with Diane.",
+          "suspicious_detail": "She kidnapped Diane and held her in a motel for two days. Her earring was found in the grave hole. She posed as a colleague to get close to Tom. Her revenge was calculated and patient."
+        },
+        {
+          "id": "suspect-kowalski",
+          "name": "Evelyn Kowalski",
+          "motive": "She was Diane's closest friend, but Diane had been pulling away. Evelyn felt abandoned. She knew about the affair — or what she thought was an affair. She wanted to protect Diane from Tom.",
+          "alibi": "Home alone all night. Her arthritis keeps her up, but she says she heard nothing except 'that darn owl at 2 AM.'",
+          "suspicious_detail": "She wears gold hoop earrings. She has a key to the Porter house. She was the one who called the police — almost too quickly. But there's no evidence she was at the scene, and her phone records show she was home."
+        }
+      ],
+      "correct_suspect_id": "suspect-karen"
+    },
+    {
+      "id": "scene-reveal",
+      "type": "reveal",
+      "text": "The person who set this tragedy in motion was Karen Mills.",
+      "explanation": "But it's not that simple.\n\nKaren Mills spent eight years watching Tom Porter live the life her father never got to have. Eight years of birthdays without him. Eight years of Christmases. Eight years of watching the man responsible drive a nice car and sell beautiful houses while her family fell apart.\n\nShe didn't plan to kill anyone. She planned to expose him. She reached out to Diane, hoping the wife would join her. Together, they could bring him down.\n\nBut Diane wavered. She still loved Tom. She wanted to protect her family, even if her family was built on a lie. And in that moment, Karen snapped.\n\n'I wasn't going to hurt her,' Karen insists. 'I just needed her out of the way until the police arrested him. I thought if she was gone — just for a few days — he'd confess. He'd break.'\n\nAnd in a way, she was right. Tom did break. He confessed to everything. The construction cover-up. The plan to kill Karen. The hole in the backyard — a monument to his own monstrous potential.\n\nBut Diane is safe. She's alive. She's talking to a lawyer about divorce, about pressing charges against Karen, about starting over.\n\nTom Porter is in jail, awaiting trial for manslaughter and conspiracy to commit murder.\n\nKaren Mills will serve time for unlawful imprisonment. She'll argue it was a citizen's arrest gone wrong. The prosecutor will argue it was kidnapping with a vendetta.\n\nThe hole in the backyard remains unfilled. The city is trying to decide what to do with it. Some neighbors want it paved over. Mrs. Kowalski wants to plant a tree.\n\nA magnolia, she says. Diane always wanted one.\n\nOn Cedar Lane, the silence is finally broken."
+    }
+  ]
+}
